@@ -1,7 +1,6 @@
 [
-    {"team": "Duke", "offensive_efficiency": 120.5, "defensive_efficiency": 95.3},
-    {"team": "Kansas", "offensive_efficiency": 118.7, "defensive_efficiency": 97.8},
-    {"team": "Gonzaga", "offensive_efficiency": 121.1, "defensive_efficiency": 94.2},
-    {"team": "UCLA", "offensive_efficiency": 116.3, "defensive_efficiency": 98.1}
+    {"team": "Duke", "offensive_efficiency": 120.5, "defensive_efficiency": 95.3, "point_differential": 10.5},
+    {"team": "Kansas", "offensive_efficiency": 118.7, "defensive_efficiency": 97.8, "point_differential": 8.2},
+    {"team": "Gonzaga", "offensive_efficiency": 121.1, "defensive_efficiency": 94.2, "point_differential": 12.3},
+    {"team": "UCLA", "offensive_efficiency": 116.3, "defensive_efficiency": 98.1, "point_differential": 7.5}
 ]
-
