@@ -6,7 +6,6 @@ export default function Matchup() {
   const [team2, setTeam2] = useState("");
   const [prediction, setPrediction] = useState(null);
 
-  // Fetch teams from the backend
   useEffect(() => {
     fetch("https://your-render-backend-url/teams")
       .then((res) => res.json())
@@ -30,29 +29,40 @@ export default function Matchup() {
 
   return (
     <div>
-      <h1>Predict Matchup</h1>
-      <select onChange={(e) => setTeam1(e.target.value)}>
-        <option value="">Select Team 1</option>
-        {teams.map((team) => (
-          <option key={team} value={team}>{team}</option>
-        ))}
-      </select>
-      <select onChange={(e) => setTeam2(e.target.value)}>
-        <option value="">Select Team 2</option>
-        {teams.map((team) => (
-          <option key={team} value={team}>{team}</option>
-        ))}
-      </select>
-      <button onClick={handlePredict} disabled={!team1 || !team2}>Predict</button>
+      <h1>MARCH MADNESS JAM</h1>
+
+      <div className="select-container">
+        <select onChange={(e) => setTeam1(e.target.value)}>
+          <option value="">Select Team 1</option>
+          {teams.map((team) => (
+            <option key={team} value={team}>{team}</option>
+          ))}
+        </select>
+
+        <select onChange={(e) => setTeam2(e.target.value)}>
+          <option value="">Select Team 2</option>
+          {teams.map((team) => (
+            <option key={team} value={team}>{team}</option>
+          ))}
+        </select>
+      </div>
+
+      <button onClick={handlePredict} disabled={!team1 || !team2}>
+        Predict!
+      </button>
 
       {prediction && (
-        <div>
-          <h3>Winner: {prediction.winner}</h3>
-          <p>Confidence: {prediction.confidence}%</p>
+        <div className="scoreboard">
+          <h3 className="winner">Winner: {prediction.winner}</h3>
+          <p className="confidence">
+            Confidence: {prediction.confidence}%
+          </p>
+          {prediction.confidence > 80 && <p className="flames">🔥 HE’S ON FIRE! 🔥</p>}
         </div>
       )}
     </div>
   );
 }
+
 
 
