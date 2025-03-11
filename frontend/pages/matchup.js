@@ -7,7 +7,7 @@ export default function Matchup() {
   const [prediction, setPrediction] = useState(null);
 
   useEffect(() => {
-    fetch("https://your-render-backend-url/teams")
+    fetch("https://marchmadness-bxbx.onrender.com/teams")
       .then((res) => res.json())
       .then((data) => setTeams(data.teams))
       .catch((err) => console.error("Error fetching teams:", err));
@@ -15,7 +15,7 @@ export default function Matchup() {
 
   const handlePredict = async () => {
     try {
-      const response = await fetch("https://your-render-backend-url/predict", {
+      const response = await fetch("https://marchmadness-bxbx.onrender.com/predict", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ team1, team2 })
