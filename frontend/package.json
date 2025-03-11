@@ -1,1 +1,11 @@
+{
+  "name": "march-madness-frontend",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
 
