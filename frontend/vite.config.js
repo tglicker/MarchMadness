@@ -1,13 +1,13 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  root: ".", 
+  root: 'src', // ✅ Set root to "src"
   build: {
-    outDir: "dist",
+    outDir: '../dist', // ✅ Build output outside of src
     rollupOptions: {
-      input: "index.html",
-    },
-  },
+      input: 'src/main.jsx' // ✅ Ensure entry file is set correctly
+    }
+  }
 });
