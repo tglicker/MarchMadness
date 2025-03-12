@@ -1,9 +1,0 @@
-{
-  "rewrites": [
-    {
-      "source": "/(.*\\.jsx)",
-      "destination": "/$1",
-      "headers": { "Content-Type": "application/javascript" }
-    }
-  ]
-}
