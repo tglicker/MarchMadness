@@ -6,4 +6,4 @@ scikit-learn==1.4.1.post1
 starlette==0.36.3
 Flask
 Flask-Cors
-
+gunicorn
