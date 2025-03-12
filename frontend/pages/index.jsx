@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { Link } from "react-router-dom"; // ✅ Correct for Vite
 
 export default function Home() {
   return (
