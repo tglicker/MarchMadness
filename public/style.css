@@ -1,0 +1,58 @@
+body {
+    font-family: 'Press Start 2P', cursive; /* Install this font from Google Fonts or similar */
+    background-image: url('assets/background.png'); /* Replace with your background image */
+    background-size: cover;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.h1 {
+    font-size: 2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin-top: 20px;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.predictions-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.team-prediction {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px solid #ffc107; /* NBA Jam yellow */
+    padding: 20px;
+    margin: 15px;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.team-prediction img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.team-prediction h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.team-prediction p {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+/* Add more NBA Jam styling as needed */
