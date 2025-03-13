@@ -6,18 +6,18 @@ CORS(app)
 
 @app.route('/predict', methods=['GET'])
 def get_predictions():
-    # Sample prediction data (replace with your model's output)
+    # Replace with your actual prediction logic
     predictions = {
-        "team1": {
-            "spread": -5.5,
-            "over_under": 145.5,
-            "win_probability": 0.6
+        "TeamA": {
+            "spread": -3.5,
+            "over_under": 150.5,
+            "win_probability": 0.65,
         },
-        "team2": {
-            "spread": 5.5,
-            "over_under": 145.5,
-            "win_probability": 0.4
-        }
+        "TeamB": {
+            "spread": 3.5,
+            "over_under": 150.5,
+            "win_probability": 0.35,
+        },
     }
     return jsonify(predictions)
 
