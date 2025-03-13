@@ -4,7 +4,7 @@ from flask import Flask, render_template, request
 import time
 import random
 from march_madness.backend.scraping import scrape_sports_reference_stats, scrape_kenpom_ratings, scrape_net_rating
-import march_madness.models as models
+import march_madness.backend.models as models
 
 app = Flask(__name__)
 CORS(app)
