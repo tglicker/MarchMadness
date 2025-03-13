@@ -3,8 +3,8 @@ from flask_cors import CORS
 from flask import Flask, render_template, request
 import time
 import random
-from .scraping import scrape_sports_reference_stats, scrape_kenpom_ratings, scrape_net_rating #Relative Import
-from . import models #Relative Import
+from backend.scraping import scrape_sports_reference_stats, scrape_kenpom_ratings, scrape_net_rating
+import backend.models as models
 
 app = Flask(__name__)
 CORS(app)
